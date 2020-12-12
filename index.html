@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video Game Sales</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+    </head>
+    <body>
+        Main View: Number of Games <input type="number" id="main_size" min=1 max=1000 value=1000>
+
+        Filter:
+        <select name="filter" id="filter">
+            <option value="None">None</option>
+          <optgroup label="Genre">
+            <option value="Sports">Sports</option>
+            <option value="Platform">Platform</option>
+            <option value="Racing">Racing</option>
+            <option value="Role-Playing">Role-Playing</option>
+            <option value="Shooter">Shooter</option>
+            <option value="Simulation">Simulation</option>
+            <option value="Action">Action</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Strategy">Strategy</option>
+            <option value="Puzzle">Puzzle</option>
+            <option value="Misc">Misc</option>
+          </optgroup>
+          <!-- <optgroup label="Platform">
+          </optgroup>
+          <optgroup label="Publisher">
+          </optgroup> -->
+        </select> 
+
+        <button id="reset">Reset Highlighting</button>
+
+        Search: <input type="text" id="search">
+        <button id="search_go">Go</button>
+
+        <svg width="1500" height="900"></svg>
+        <script src="main.js"></script>
+    </body>
+</html>
